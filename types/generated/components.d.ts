@@ -8,9 +8,9 @@ export interface FormFormPage extends Struct.ComponentSchema {
     icon: 'file-alt';
   };
   attributes: {
-    description: Schema.Attribute.RichText;
-    disclaimer: Schema.Attribute.RichText;
-    footnote: Schema.Attribute.RichText;
+    description: Schema.Attribute.String;
+    disclaimer: Schema.Attribute.String;
+    footnote: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }

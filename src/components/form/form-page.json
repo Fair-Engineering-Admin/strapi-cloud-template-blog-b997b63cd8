@@ -11,13 +11,13 @@
         "type": "string"
       },
       "description": {
-        "type": "richtext"
+        "type": "string"
       },
       "footnote": {
-       "type": "richtext"
+       "type": "string"
       },
       "disclaimer": {
-        "type": "richtext"
+        "type": "string"
       }
     }
   }

@@ -3,8 +3,10 @@
   "collectionName": "single_check_fair",
   "info": {
     "singularName": "check-fair",
+    "signularApiId": "check-fair",
     "pluralName": "check-fair-pages",
-    "displayName": "Check Fair"
+    "displayName": "Check Fair",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

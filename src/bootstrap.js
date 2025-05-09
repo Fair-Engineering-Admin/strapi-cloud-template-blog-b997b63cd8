@@ -252,6 +252,31 @@ async function importSeedData() {
   await importArticles();
   await importGlobal();
   await importAbout();
+  const role = await strapi.db.query('plugin::users-permissions.role').findOne({ where: { type: 'public' } });
+  console.log(role.id);
+  // Make content-manager/single-types public
+  await strapi.db.query('plugin::users-permissions.permission').create({
+    data: {
+      action: 'plugin::content-manager.single-types.find',
+      role: role.id,
+      enabled: true,
+    },
+  });
+
+  await strapi.db.query('plugin::users-permissions.permission').create({
+    data: {
+      action: 'api::check-fair.check-fair.find',
+      role: role.id,
+      enabled: true,
+    },
+  });
+  await strapi.db.query('plugin::users-permissions.permission').create({
+    data: {
+      action: 'api::fair.fair.find',
+      role: role.id,
+      enabled: true,
+    },
+  });
 }
 
 async function main() {

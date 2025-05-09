@@ -372,8 +372,10 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiCheckFairCheckFair extends Struct.SingleTypeSchema {
   collectionName: 'single_check_fair';
   info: {
+    description: '';
     displayName: 'Check Fair';
     pluralName: 'check-fair-pages';
+    signularApiId: 'check-fair';
     singularName: 'check-fair';
   };
   options: {
