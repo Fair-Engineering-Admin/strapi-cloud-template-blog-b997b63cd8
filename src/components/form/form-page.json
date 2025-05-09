@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_form_form_pages",
+    "info": {
+      "displayName": "Form Page",
+      "icon": "file-alt",
+      "description": "Reusable form page section"
+    },
+    "options": {},
+    "attributes": {
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "richtext"
+      },
+      "footnote": {
+       "type": "richtext"
+      },
+      "disclaimer": {
+        "type": "richtext"
+      }
+    }
+  }

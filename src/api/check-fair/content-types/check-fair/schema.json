@@ -1,0 +1,77 @@
+{
+  "kind": "singleType",
+  "collectionName": "single_check_fair",
+  "info": {
+    "singularName": "check-fair",
+    "pluralName": "check-fair-pages",
+    "displayName": "Check Fair"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "get_started_v3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page",
+      "configurable": false,
+      "default": {
+        "title": "Thousands have already checked",
+        "description": "<pCheck your eligibility today — simple, clear, and risk-free</p>",
+        "footnote": "<p>Important: Use your 'current postal code' - not the one from when you took out the loan</p>",
+        "disclaimer": "<p>Fair is a trading name of Reclaims4U Ltd who is a Claims Management Company (CMC), authorised and regulated by the Financial Conduct Authority. You can claim for free, without using a CMC, first to your finance provider or to the FOS/FSCS.</p>"
+      }
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page",
+      "configurable": false,
+      "default": {
+        "title": "Let’s Get Started",
+        "description": "<p>Please enter your full name and date of birth</p>",
+        "footnote": "",
+        "disclaimer": ""
+      }
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page",
+      "configurable": false,
+      "default": {
+        "title": "Contact Information",
+        "description": "<p>We need this information to share details about your potential refund.</p>",
+        "footnote": "",
+        "disclaimer": ""
+      }
+    },
+    "sign": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page",
+      "configurable": false,
+      "default": {
+        "title": "Almost Done — Please Sign to Start Your Claim",
+        "description": "<p>{{name}}, you’re one click away from starting the claims process</p>",
+        "footnote": "",
+        "disclaimer": "<p>By signing this form, you are agreeing to our <a href=\"https://fairmoney.co.uk/terms-and-conditions\">Terms and Conditions</a> and <a href=\"https://fairmoney.co.uk/privacy-policy\">Privacy Policy</a>. You are also confirming that you are the person named above.</p>"
+      }
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "credit_report": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "submit_claim": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    }
+  }
+}

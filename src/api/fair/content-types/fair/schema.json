@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "single_fair",
+  "info": {
+    "singularName": "fair",
+    "pluralName": "fair-pages",
+    "displayName": "Fair"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "get_started_v3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "sign": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "credit_report": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    },
+    "submit_claim": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-page"
+    }
+  }
+}
