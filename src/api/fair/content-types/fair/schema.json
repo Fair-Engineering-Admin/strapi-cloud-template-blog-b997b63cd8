@@ -4,7 +4,8 @@
   "info": {
     "singularName": "fair",
     "pluralName": "fair-pages",
-    "displayName": "Fair"
+    "displayName": "Fair",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -44,6 +45,11 @@
       "type": "component",
       "repeatable": false,
       "component": "form.form-page"
+    },
+    "landing_page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.landing-page"
     }
   }
 }

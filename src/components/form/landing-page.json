@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_form_landing_pages",
+  "info": {
+    "displayName": "Landing Page",
+    "icon": "chartCircle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hero_tagline": {
+      "type": "string",
+      "default": "You could be owed upto £6,600* in PCP Refunds"
+    },
+    "hero_description": {
+      "type": "string"
+    },
+    "cta_btn_label": {
+      "type": "string"
+    },
+    "hero_disclaimer": {
+      "type": "string"
+    },
+    "steps_header": {
+      "type": "string"
+    },
+    "step_1_title": {
+      "type": "string"
+    },
+    "step_1_description": {
+      "type": "string"
+    },
+    "step_2_title": {
+      "type": "string"
+    },
+    "step_2_description": {
+      "type": "string"
+    },
+    "step_3_title": {
+      "type": "string"
+    },
+    "step_3_description": {
+      "type": "string"
+    },
+    "brand_disclaimer_title": {
+      "type": "string"
+    },
+    "brand_disclaimer_btn_label": {
+      "type": "string"
+    },
+    "featured_heading": {
+      "type": "string"
+    },
+    "footer_disclaimer": {
+      "type": "string"
+    }
+  }
+}

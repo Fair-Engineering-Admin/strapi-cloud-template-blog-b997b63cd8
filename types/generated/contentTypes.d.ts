@@ -384,8 +384,7 @@ export interface ApiCheckFairCheckFair extends Struct.SingleTypeSchema {
   attributes: {
     contact: Schema.Attribute.Component<'form.form-page', false> &
       Schema.Attribute.DefaultTo<{
-        description: '<p>We need this information to share details about your potential refund.</p>';
-        disclaimer: '';
+        description: 'We need this information to share details about your potential refund.';
         footnote: '';
         title: 'Contact Information';
       }>;
@@ -395,18 +394,17 @@ export interface ApiCheckFairCheckFair extends Struct.SingleTypeSchema {
     credit_report: Schema.Attribute.Component<'form.form-page', false>;
     get_started_v3: Schema.Attribute.Component<'form.form-page', false> &
       Schema.Attribute.DefaultTo<{
-        description: '<pCheck your eligibility today \u2014 simple, clear, and risk-free</p>';
-        disclaimer: '<p>Fair is a trading name of Reclaims4U Ltd who is a Claims Management Company (CMC), authorised and regulated by the Financial Conduct Authority. You can claim for free, without using a CMC, first to your finance provider or to the FOS/FSCS.</p>';
-        footnote: "<p>Important: Use your 'current postal code' - not the one from when you took out the loan</p>";
+        description: 'Check your eligibility today \u2014 simple, clear, and risk-free';
+        footnote: "Important: Use your 'current postal code' - not the one from when you took out the loan";
         title: 'Thousands have already checked';
       }>;
     info: Schema.Attribute.Component<'form.form-page', false> &
       Schema.Attribute.DefaultTo<{
-        description: '<p>Please enter your full name and date of birth</p>';
-        disclaimer: '';
+        description: 'Please enter your full name and date of birth';
         footnote: '';
         title: 'Let\u2019s Get Started';
       }>;
+    landing_page: Schema.Attribute.Component<'form.landing-page', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -417,8 +415,7 @@ export interface ApiCheckFairCheckFair extends Struct.SingleTypeSchema {
     questions: Schema.Attribute.Component<'form.form-page', false>;
     sign: Schema.Attribute.Component<'form.form-page', false> &
       Schema.Attribute.DefaultTo<{
-        description: '<p>{{name}}, you\u2019re one click away from starting the claims process</p>';
-        disclaimer: '<p>By signing this form, you are agreeing to our <a href="https://fairmoney.co.uk/terms-and-conditions">Terms and Conditions</a> and <a href="https://fairmoney.co.uk/privacy-policy">Privacy Policy</a>. You are also confirming that you are the person named above.</p>';
+        description: '{{name}}, you\u2019re one click away from starting the claims process';
         footnote: '';
         title: 'Almost Done \u2014 Please Sign to Start Your Claim';
       }>;
@@ -432,6 +429,7 @@ export interface ApiCheckFairCheckFair extends Struct.SingleTypeSchema {
 export interface ApiFairFair extends Struct.SingleTypeSchema {
   collectionName: 'single_fair';
   info: {
+    description: '';
     displayName: 'Fair';
     pluralName: 'fair-pages';
     singularName: 'fair';
@@ -447,6 +445,7 @@ export interface ApiFairFair extends Struct.SingleTypeSchema {
     credit_report: Schema.Attribute.Component<'form.form-page', false>;
     get_started_v3: Schema.Attribute.Component<'form.form-page', false>;
     info: Schema.Attribute.Component<'form.form-page', false>;
+    landing_page: Schema.Attribute.Component<'form.landing-page', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::fair.fair'> &
       Schema.Attribute.Private;
